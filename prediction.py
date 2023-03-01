@@ -16,3 +16,4 @@ def predict(data, model):
     
     return model.predict(data)
 
+
