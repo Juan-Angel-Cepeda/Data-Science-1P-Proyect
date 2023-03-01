@@ -7,7 +7,7 @@ def predict(data, model):
         model =joblib.load('tree_regression_model.pkl')
     elif model == 'Random Forest Regression':
         model == joblib.load('random_forest_model.pkl')
-    elif model == 'Suport Vector Machine':
+    elif model == 'Support Vector Regression':
         model == joblib.load('svr_regression_model.pkl')
 
 

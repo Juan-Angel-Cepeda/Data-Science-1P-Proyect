@@ -25,7 +25,7 @@ model = col2.radio(
     'Select the model to use:',
     (
         'Linear Regression', 
-        'Decision Rree Regression', 
+        'Decision Tree Regression', 
         'Random Forest Regression', 
         'Support Vector Regression'
     )
@@ -45,5 +45,5 @@ if st.button('Predict'):
     )
 
     result = prediction.predict(data, model)
-    st.write('The predicted price is: ${:.3f}'.format(result[0]))
+    st.write('Valor predecido por el modelo${} ${:.3f}'.format(model,result[0]))
 
