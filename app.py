@@ -21,7 +21,6 @@ population = col2.number_input('Population', min_value = 1.0, max_value = 50000.
 ocean_proximity = col2.selectbox('Ocean proximity', ['<1H OCEAN', 'INLAND', 'NEAR OCEAN', 'NEAR BAY', 'ISLAND'])
 
 model = col2.radio(
-    
     'Select the model to use:',
     (
         'Linear Regression', 
@@ -45,5 +44,5 @@ if st.button('Predict'):
     )
 
     result = prediction.predict(data, model)
-    st.write('Valor predecido por el modelo${} ${:.3f}'.format(model,result[0]))
+    st.write("Valor predecido por el modelo ${} ${:.3f}".format(model,result[0]))
 
